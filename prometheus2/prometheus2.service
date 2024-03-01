@@ -6,6 +6,7 @@ Documentation=https://prometheus.io
 After=network.target
 
 [Service]
+Type=notify
 EnvironmentFile=-/etc/default/prometheus
 User=prometheus
 ExecStart=/usr/bin/prometheus $PROMETHEUS_OPTS
